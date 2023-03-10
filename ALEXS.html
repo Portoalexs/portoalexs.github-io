@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Setiawan</title>
+    <link rel="stylesheet" href="ALEXS.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+
+<header>
+    <div class="fas fa-bars"></div>
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+        </div>    
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portofolio">portofolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+      
+    </header>
+    
+    <!-- header section ends -->
+    
+    <!-- home section starts -->
+    
+    <section id="home">
+    
+       <div class="content">
+    
+        <h1>hi, <br>
+        i am <span>Alex Setiawan</span>
+        </h1>
+    
+        <h1>
+            i am a <span>Photographer</span>
+        </h1>
+    
+        <a href="#about"><button>about me</button></a>
+    
+       </div> 
+    
+    
+       <div class="image">
+           <img src="images/pic.png" alt="">
+       </div>
+    
+    </section>
+    
+    <!-- home section ends -->
+    
+    
+    <!-- about section starts  -->
+    
+    <section id="about">
+    
+    <h1>about</h1>
+    
+    <div class="wrapper">
+    
+    <div class="image">
+        <img src="0.jpg" class="foto">
+    </div>
+    
+    <div class="content">
+        <h3>my name is alex setiawan</h3>
+        <p>Saya Alex Setiawan, mahasiswa VCD di Universitas Ciputra Surabaya dan berfokus pada bidang fotografi.</p><br>
+        <p>Menurut saya fotografi sangat menarik karena merupakan sarana tempat untuk menyimpan memori, tempat untuk berekspresi, media komunikasi yang kuat, dan bisa juga berfungsi sebagai media dokumentatif.</p>
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- about section ends  -->
+
+    <!-- portofolio section starts  -->
+    
+    <section id="portofolio">
+    
+    <h1>portofolio</h1>
+    
+    <div class="box-container">
+    
+    <div class="box">
+        <img src="1.jpg" alt="">
+        <a href="1.jpg"><button>view details</button></a>
+    </div>
+    
+    <div class="box">
+        <img src="2.jpg" alt="">
+        <a href="2.jpg"><button>view details</button></a>
+    </div>
+    
+    <div class="box">
+        <img src="3.jpg" alt="">
+        <a href="3.JPG"><button>view details</button></a>
+    </div>
+    
+    <div class="box">
+        <img src="4.jpg" alt="">
+        <a href="4.jpg"><button>view details</button></a>
+    </div>
+    
+    <div class="box">
+        <img src="5.jpg" alt="">
+        <a href="5.jpg"><button>view details</button></a>
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- portofolio section ends  -->
+    
+    
+    <!-- contact section starts  -->
+    
+    <section id="contact">
+    
+    <h1>contact</h1>
+    
+    <div class="wrapper">
+    
+    <div class="info">
+        <div class="item">
+            <h2><i class="fas fa-envelope"></i>QR</h2>
+            
+        </div>
+    <div class="qr">
+        <img src="qr.jpg" class="qr">
+    </div>
+        
+        <div class="item">
+            <h2><i class="fas fa-phone"></i>email</h2>
+            <p>alexsetiawan2002@gmail.com</p>
+        </div>
+    
+    </div>
+    
+   
+    
+    </div>
+    
+    
+    </section>
+    
+    <!-- contact section ends  -->
+    
+    
+    <!-- footer section starts  -->
+    
+    <section id="footer">
+    
+        <img src="logo.png" class="logo">
+
+    </section>
+    
+    <!-- footer section ends  -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- jquery/js part -->
+    
+    
+    <script>
+    
+    $(document).ready(function(){
+    
+        $('.fa-bars').click(function(){
+            $(this).toggleClass('fa-times');
+            $('nav').toggleClass('nav-toggle');
+        });
+    
+        $('nav ul li a').click(function(){
+            $('.fa-bars').removeClass('fa-times');
+            $('nav').removeClass('nav-toggle');
+        });
+    
+        $(window).scroll(function(){
+            if($(window).scrollTop() < 20){
+                $('header').css('box-shadow','none');
+            }else{
+                $('header').css('box-shadow','0 .2rem .5rem #333');
+            }
+        });
+    
+    });
+    
+    </script>
+</body>
+</html>
